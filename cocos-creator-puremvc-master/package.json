@@ -1,0 +1,18 @@
+{
+  "name": "cocos-creator-puremvc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ikerlin/cocos-creator-puremvc.git",
+  "author": "Kerlin Huang <ikerlin@msn.com>",
+  "license": "MIT",
+  "scripts": {
+    "proto": "yarn pbjs -t static-module -w commonjs -o assets/script/protobuf/proto.js assets/script/protobuf/awesome.proto && yarn pbts -o assets/script/protobuf/proto.d.ts assets/script/protobuf/proto.js"
+  },
+  "dependencies": {
+    "@types/isomorphic-fetch": "^0.0.34",
+    "@types/lodash": "^4.14.108",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.10",
+    "protobufjs": "^6.8.6"
+  }
+}
